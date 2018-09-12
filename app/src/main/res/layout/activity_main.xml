@@ -1,0 +1,30 @@
+<LinearLayout android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center_horizontal"
+        android:text="Contactos de Emergencia"
+        android:layout_marginTop="70dp"
+        android:id="@+id/btContactos"/>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center_horizontal"
+        android:text="Contactos Utiles"
+        android:layout_marginTop="70dp"
+        android:id="@+id/btContactosUtiles"/>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center_horizontal"
+        android:text="Información CO"
+        android:layout_marginTop="70dp"
+        android:id="@+id/btInfo"/>
+    
+</LinearLayout>
