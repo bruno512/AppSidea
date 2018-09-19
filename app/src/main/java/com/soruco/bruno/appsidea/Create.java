@@ -15,7 +15,6 @@ import android.widget.Toast;
 public class Create extends AppCompatActivity {
 
     EditText et_nombre, et_apellido, et_tel;
-    Button bt_mostrar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,15 +26,6 @@ public class Create extends AppCompatActivity {
         et_tel = (EditText)findViewById(R.id.et_tel);
         // Para darle una mascara de input phone
         et_tel.addTextChangedListener(new PhoneNumberFormattingTextWatcher());
-        bt_mostrar = (Button) findViewById(R.id.bt_mostrar);
-
-        // Cuando hacen clic en el btn mostrar:
-        bt_mostrar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(Create.this, ListaContactos.class));
-            }
-        });
 
         // Para los botones de adelante y retroceso
         if (getSupportActionBar() != null){
@@ -62,6 +52,8 @@ public class Create extends AppCompatActivity {
                     Toast.makeText(this,"Registro insertado",Toast.LENGTH_SHORT).show();
                 }
             }
+            //Vuelvo hacia atras
+            onBackPressed();
         }catch (Exception ex){
             Toast.makeText(this, ex.getMessage(),Toast.LENGTH_SHORT).show();
         }

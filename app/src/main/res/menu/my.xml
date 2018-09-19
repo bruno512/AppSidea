@@ -12,11 +12,11 @@
         app:showAsAction="always">
     </item>
 
-    <item
-        android:id="@+id/home"
-        android:icon="@android:drawable/ic_menu_info_details"
-        android:orderInCategory="100"
-        android:title="Crear Contacto"
-        app:showAsAction="always">
-    </item>
+    <!--<item-->
+        <!--android:id="@+id/home"-->
+        <!--android:icon="@android:drawable/ic_menu_info_details"-->
+        <!--android:orderInCategory="100"-->
+        <!--android:title="Crear Contacto"-->
+        <!--app:showAsAction="always">-->
+    <!--</item>-->
 </menu>

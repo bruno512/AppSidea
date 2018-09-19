@@ -72,10 +72,4 @@
         android:text="guardar"
         android:layout_marginHorizontal="25dp"/>
 
-    <Button
-        android:id="@+id/bt_mostrar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="mostrar"
-        android:layout_marginHorizontal="25sp"/>
 </LinearLayout>
